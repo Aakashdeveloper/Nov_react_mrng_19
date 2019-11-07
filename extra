@@ -1,0 +1,100 @@
+Es5 ==>  EcmaScript 5
+Es6 ==>  EcmaScript 6
+
+var a = 10
+
+var a => decalring
+a=10 => assignment
+
+//Es5
+
+var  => we can redecalre and reassign
+
+//Es6
+
+let => we cannot redecalre but can reassign
+const =>  we cannot redecalre as well as cannot reassign
+
+//Es5
+function add(a,b){
+    return a+b
+}
+
+var add = function(a,b){
+    return a+b
+}
+
+va people = function(name,color){
+   this.color = color
+}
+
+//Es6
+
+let add = (a,b) => { return a+b}
+
+class People{
+    constructore(name,color){
+        this.color = color
+    }
+}
+
+
+///////
+Functional Component        Class Base Component
+light in weight                 Heavy as comparet to  function
+Decoractive/dump                Logic
+Cannot handle State             We can handle state
+
+State 
+Props
+
+
+///Open Source///
+npm ==> node package manager
+package.json
+
+javascript object notation
+[
+    {
+        name:"a",
+        class:"b"
+    },
+    {
+        name:"a",
+        class:"b"
+    }
+]
+
+/********************
+    Step to create package.json
+***********************/
+
+> naviagte to folder using terminal/cmd
+> npm init
+> answer all question
+> type "yes"
+
+/********************
+    Step to install local package
+***********************/
+
+> naviagte to folder using terminal/cmd
+> npm i react-slick/ npm install react-slick
+
+local / global
+
+/********************
+    Step to install global package
+***********************/
+Win
+> Run your cmd as admin
+> npm i -g @aakashdeveloper/create-node-app
+
+Mac/linux
+> Run terminal
+> sudo npm i -g @aakashdeveloper/create-node-app
+
+
+/********************
+    Step to Setup react
+***********************/
