@@ -98,3 +98,8 @@ Mac/linux
 /********************
     Step to Setup react
 ***********************/
+> npm i -g create-react-app
+> navigate to folder where we need app using cmd
+> create-react-app  firstapp
+> cd firstapp
+> npm start
