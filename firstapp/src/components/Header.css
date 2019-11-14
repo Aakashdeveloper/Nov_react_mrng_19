@@ -1,3 +1,8 @@
-h1{
-    color:teal
+header{
+    background:tomato
+}
+
+.logo{
+    text-align:center;
+    color:#fff
 }

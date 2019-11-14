@@ -45,9 +45,11 @@ light in weight                 Heavy as comparet to  function
 Decoractive/dump                Logic
 Cannot handle State             We can handle state
 
-State 
+State => local variable
 Props
 
+componant A   Props          Component B
+State         =====>   state
 
 ///Open Source///
 npm ==> node package manager
@@ -103,3 +105,7 @@ Mac/linux
 > create-react-app  firstapp
 > cd firstapp
 > npm start
+
+
+
+
