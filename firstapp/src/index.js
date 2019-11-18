@@ -1,20 +1,38 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-import Second from './components/second';
-import Header from './components/Header'
+import NewsList from './components/newsList';
+import Header from './components/Header';
+import JSON from './db.json'
 
-const App = () => {
-    return(
-        <div>
-            <Header></Header>
-            <h1>Hi To React</h1>
-            <h2>This is React Component</h2>    
-            <hr/>
-            <Second/>
-        </div>
-        
-    )
+class App extends Component {
+    constructor(props){
+        super()
+
+        this.state = {
+            news:JSON,
+            filtered: JSON
+        }
+    }
+
+    filterNews(keyword){
+        const output = this.state.news.filter((data) => {
+            return data.title.toLowerCase().indexOf(keyword.toLowerCase())>-1;
+        })
+
+        this.setState({filtered:output})
+    }
+    // ages.filter((data)=> {return data>= 18})
+    render(){
+        return(
+            <div>
+                <Header usertext={(uin) => {this.filterNews(uin)}}></Header>
+                <hr/>
+               <NewsList newsdata={this.state.filtered}></NewsList>
+            </div>
+            
+        )
+    }
 }
 
 ReactDOM.render(<App/>, document.getElementById('root'))
